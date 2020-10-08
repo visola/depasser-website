@@ -1,0 +1,4 @@
+{
+	"scripts":["contact.js"],
+	"styles":["content.css", "rightMenu.css", "contact.css"]
+}

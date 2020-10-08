@@ -1,0 +1,4 @@
+{
+	"scripts":["courses.js"],
+	"styles":["rightMenu.css", "content.css", "courses.css"]
+}

@@ -1,0 +1,38 @@
+apply plugin: 'war'
+
+dependencies {
+  implementation project(':common')
+  implementation project(':common-js')
+  implementation project(':content')
+  implementation project(':redirect-filter')
+  implementation project(':resource-manager')
+  implementation project(':spring-utils')
+  implementation project(':timer')
+  implementation project(':timer-web')
+
+  implementation 'com.h2database:h2:1.3.149'
+  implementation 'javax.servlet:jstl:1.2'
+  implementation 'javax.servlet:servlet-api:2.5'
+  implementation 'log4j:log4j:1.2.16'
+  implementation 'org.apache.openjpa:openjpa:2.1.0'
+  implementation 'org.codehaus.jackson:jackson-mapper-asl:1.7.3'
+  implementation 'org.slf4j:slf4j-log4j12:1.6.1'
+  implementation 'org.slf4j:slf4j-api:1.6.1'
+  implementation 'org.springframework:spring-orm:3.0.3.RELEASE'
+  implementation 'org.springframework:spring-web:3.0.3.RELEASE'
+  implementation 'org.springframework:spring-webmvc:3.0.3.RELEASE'
+  implementation 'org.springframework.security:spring-security-config:3.0.3.RELEASE'
+  implementation 'org.springframework.security:spring-security-web:3.0.3.RELEASE'
+}
+
+task cleanDatabase(type: Delete) {
+  delete "${buildDir}/database"
+}
+
+task generateDatabase(type: JavaExec, dependsOn: cleanDatabase) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'org.h2.tools.RunScript'
+  args '-url', "jdbc:h2:${buildDir}/database/content", '-script', "${projectDir}/src/main/database/schema.sql"
+}
+
+build.dependsOn generateDatabase

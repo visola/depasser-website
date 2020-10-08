@@ -1,0 +1,48 @@
+#leftMenu {
+	background: url('img/student/lateral.png') no-repeat;
+	height: 219px;
+	left: 0;
+	position: absolute;
+	top: 68px;
+	width: 195px;
+}
+
+.page .content button {
+	background: url('img/student/entrar.png') no-repeat;
+	border: none;
+	color: transparent;
+	cursor: pointer;
+	height: 69px;
+	position: absolute;
+	right: 265px;
+	top: 109px;
+	width: 173px;
+}
+
+.page .content input {
+	margin: 10px 10px 10px 0;
+	width: 185px;
+}
+
+.page .content input:hover {
+	background: #fcfcfc;
+	border: 1px solid #e7e7e7;
+	padding: 4px;
+}
+
+.page .content input, .page .content label {
+	border: none;
+	border-bottom: 1px solid #ebebeb;
+	font-size: 12pt;
+	padding: 5px;
+}
+
+.page .content label {
+	display: inline-block;
+	margin: 10px 0 10px;
+	width: 50px;
+}
+
+.page .content > p {
+	padding-bottom: 25px;
+}

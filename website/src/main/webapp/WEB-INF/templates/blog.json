@@ -1,0 +1,4 @@
+{
+	"scripts":["blog.js"],
+	"styles":["content.css", "blog.css"]
+}
