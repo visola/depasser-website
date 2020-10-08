@@ -1,0 +1,77 @@
+#courseContent .description {
+	margin-bottom: 30px;
+}
+
+#courseContent h3 {
+	border: none;
+	color: #4dc6f4;
+	font-family: Arial, sans-serif;
+	font-size: 15pt;
+	font-weight: bold;
+	margin: 15px 0 2px;
+	padding: 0;
+	text-align: left;
+}
+
+#courseContent ul {
+	color: #545454;
+	font-family: arial, sans-serif;
+	font-size: 10pt;
+}
+
+#leftMenu {
+	font-family: sans-serif;
+	height: 300px;
+	left: 0;
+	position: absolute;
+	top: 68px;
+	width: 195px;
+}
+
+#leftMenu, #leftMenu ul, #leftMenu li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#leftMenu > li {
+	margin-bottom: 2px;
+}
+
+#leftMenu > li > span, #leftMenu > li > ul > li {
+	color: white;
+	display: block;
+	margin-bottom: 2px;
+	padding: 5px;
+	padding-left: 15px;
+}
+
+#leftMenu > li > span {
+	background: #e7e7e7;
+	cursor: pointer;
+	font-size: 16pt;
+	font-weight: bold;
+	height: 25px;
+	letter-spacing: 4px;
+	padding-top: 11px;
+}
+
+#leftMenu > li.hover > span, #leftMenu > li.selected > span {
+	background: url('img/courses/fundo_menu_esquerda.png');
+}
+
+#leftMenu > li > ul > li {
+	background: #fafafa;
+	color: #545454;
+	font-size: 1em;
+	height: 35px;
+	overflow: hidden;
+}
+
+#leftMenu > li > ul > li.hover, #leftMenu > li > ul > li.selected {
+	background: #e7e7e7;
+}
+
+#rightMenu {
+	top: 58px;
+}

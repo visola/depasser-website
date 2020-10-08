@@ -1,0 +1,100 @@
+a {
+	cursor: pointer;
+}
+
+body {
+	background: black;
+	font-family: TenbyFiveLight;
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+}
+
+#container, #footer, #header {
+	background: white;
+	margin: 0 auto;
+	position: absolute;
+	width: 920px;
+}
+
+#footer {
+	background: rgb(50,50,50);
+	color: #A9A9A9;
+	height: 50px;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+}
+
+#footer p {
+	margin-top: 7px;
+}
+
+#header {
+	border-bottom: 1px solid #c5c5c5;
+	height: 50px;
+	padding: 0;
+	position: absolute;
+	z-index: 999;
+}
+
+#header > img {
+	float: left;
+}
+
+#header > img.small {
+	display: none;
+	margin: 8px 35px 0px 20px;
+	height: 40px;
+}
+
+#header li {
+	color: #CCC;
+	display: inline-block;
+	height: 18px;
+	margin: 0 -2px -1px;
+	padding: 10px;
+}
+
+#header li.selected {
+	border-bottom: 1px solid black;
+	color: black;
+	padding-bottom: 9px;
+}
+
+#header li.selected a {
+	color: black;
+}
+
+#header li a {
+	color: #A9A9A9;
+	text-decoration: none;
+}
+
+#header > span {
+	bottom: 10px;
+	position: absolute;
+	right: 5px;
+}
+
+#header > span img {
+	height: 15px;
+	position: relative;
+	top: 3px;
+}
+
+#header > span input {
+	border: 1px solid #EEE;
+}
+
+#header > span input:hover, #header > span input:focus {
+	background:#DEDEDE; 
+	border: 1px solid #9A9A9A;
+}
+
+#header ul {
+	display: inline-block;
+	list-style: none;
+	margin: 13px 0 0;
+	padding: 0;
+}

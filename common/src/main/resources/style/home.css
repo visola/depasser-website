@@ -1,0 +1,189 @@
+#arrows {
+	position: absolute;
+	right: 0;
+    top: 115px;
+}
+
+#blue {
+	background-image: url('img/home/box_azul.png');
+	height: 208px;
+	position: absolute;
+	right: 0;
+	top: 420px;
+	width: 380px;
+}
+
+#blue h2 {
+	color: white;
+	font-size: 2em;
+	font-weight: normal;
+	margin: 20px 10px 10px 30px;
+}
+
+#blue p {
+	color: white;
+	font-family: Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 5px 0 0 40px;
+}
+
+#blue p span {
+	color: #696464;
+	padding-right: 10px;
+}
+
+#banners {
+	height: 315px;
+	left: 0;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	width: 620px;
+}
+
+.banner {
+	opacity: 0;
+	position: absolute;
+}
+
+.banner div {
+	bottom: 40px;
+	color: #4DCFF4;
+	font-size: 2em;
+	position: absolute;
+	right: 10px;
+	width: 220px;
+}
+
+.banner img {
+	width: 620px;
+}
+
+.banner > div > span {
+	display: block;
+	position: relative;
+}
+
+.banner > div > span > span {
+	color: black;
+}
+
+.banner_text_1 {
+}
+
+.banner_text_2 {
+	right: 15px;
+}
+
+.banner_text_3 {
+	right: 25px;
+}
+
+#buttons {
+	bottom: 5px;
+	position: absolute;
+	right: 25px;
+}
+
+#buttons span {
+	background: #4dcff4;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	height: 14px;
+	margin: 2px;
+	opacity: 0.5;
+	padding: 2px;
+	text-align: center;
+	width: 10px;
+}
+
+#buttons span.selected {
+	background: #4dcff4;
+	cursor: default;
+	opacity: 1;
+}
+
+#news {
+	background: rgb(221, 244, 252);
+	height: 75px;
+	left: 0;
+	opacity: 0.75;
+	position: absolute;
+	width: 100%;
+	top: 313px;
+}
+
+.postElement {
+	font-family: Arial, sans-serif; 
+	height: 125px;
+	padding-left: 20px;
+}
+
+.postElement p {
+	color: #6b6b6b;
+	margin: 0;
+}
+
+.postElement p.date {
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+#posts {
+	background: #e7e7e7;
+	height: 138px;
+	left: 0px;
+	position: absolute;
+	top: 470px;
+	width: 570px;
+}
+
+#posts > div {
+	height: 125px;
+	overflow: hidden;
+}
+
+#posts > div > div {
+	position: relative;
+	width: 520px;
+}
+
+#posts h2 {
+	color: #4DCFF4;
+	font-size: 2em;
+	font-weight: normal;
+	margin: -45px 0 20px 30px;	
+}
+
+#posts .postElement h2 {
+	color: #4dc6f4;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+#small {
+	background-image: url('img/home/box_cinza.png');
+	height: 237px;
+	position: absolute;
+	right: 0;
+	top: 113px;
+	width: 307px;
+	z-index: 1000;
+}
+
+#small h2 {
+	color: white;
+	font-size: 2.5em;
+	margin: 40px 30px 0;
+}
+
+#small p {
+	color: #4DCFF4;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.3em;
+	margin: 10px 10px 10px 30px;
+}

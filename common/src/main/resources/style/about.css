@@ -1,0 +1,16 @@
+#leftMenu {
+	height: 300px;
+	left: 10px;
+	position: absolute;
+	top: 68px;
+	width: 170px;
+}
+
+#leftMenu img {
+	border: 1px solid #EBEBEB;
+	padding: 3px;
+}
+
+#rightMenu div {
+	margin-top: 0;
+}

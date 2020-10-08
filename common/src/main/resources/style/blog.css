@@ -1,0 +1,144 @@
+a {
+	cursor: pointer;
+}
+
+.blogPost > div {
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.blogPost > div.abstract, .blogPost > div.blogContent {
+	text-align: center;
+}
+
+.blogPost > div.abstract img, .blogPost > div.blogContent img {
+	border: 1px solid #EBEBEB;
+	padding: 3px;
+}
+
+.blogPost > div.abstract > img, .blogPost > div.blogContent > img {
+	margin: 25px 0; 
+}
+
+.blogPost > div.abstract p > img, .blogPost > div.blogContent p > img {
+	float: left;
+	margin: 10px 15px 5px 0px;
+}
+
+.blogPost > div.blogContent {
+	border-bottom: 1px solid #ebebeb;
+}
+
+.blogPost > div.comment {
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 25px;
+	padding: 5px 10px;
+}
+
+.blogPost > div.comment img {
+	padding-right: 5px;
+}
+
+.blogPost > div.postComment {
+	
+}
+
+.blogPost textarea {
+	height: 150px;
+	width: 100%;
+}
+
+.blogPost > p {
+	font-size: 8pt;
+	margin: 2px 0;
+}
+
+#blogPosts h2 {
+	border: none;
+	font-family: Arial, sans-serif;
+	font-size: 16pt;
+	font-weight: bold;
+	margin: 15px 0 2px;
+	padding: 0;
+	text-align: left;
+}
+
+.content > h2 {
+	background: url('img/blog/titulo.png') no-repeat 100px 0px;
+}
+	
+#leftMenu {
+	left: 0;
+	position: absolute;
+	top: 69px;
+	width: 190px;
+}
+
+#leftMenu h2, #rightMenu h2 {
+	background: #e7e7e7;
+	color: white;
+	font-size: 14pt;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 5px 5px 5px 20px;
+}
+
+#leftMenu > p {
+	font-family: Arial, sans-serif;
+	margin: 2px 10px;
+	text-align: center;
+}
+
+#leftMenu > ul {
+	list-style: none;
+	margin: 0 0 30px 0;
+	padding: 0;
+}
+
+#leftMenu > ul li {
+	border-bottom: 1px solid #e7e7e7;
+	margin-left: 20px;
+	padding: 2px 2px 2px 0px;
+}
+
+#leftMenu > ul a {
+	color: #545454;
+	font-family: Arial, sans-serif;
+	font-size: 8pt;
+}
+
+.page .content {
+	border-bottom: none;
+}
+
+.page .content > h2 {
+	padding-bottom: 16px;
+}
+
+#rightMenu {
+	right: 0;
+	top: 69px;
+}
+
+#rightMenu ul {
+	color: #545454; 
+	font-family: Arial, sans-serif;
+	font-size: 8pt;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#rightMenu > ul > li {
+	border-bottom: 1px solid #e7e7e7;
+	margin-left: 20px;
+	padding: 5px 5px 5px 0px;
+}
+
+#rightMenu li > ul {
+	padding: 2px 0 0 10px;
+}
+
+#rightMenu li > ul > li {
+	padding: 2px;
+	padding-bottom: 0;
+}

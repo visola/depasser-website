@@ -1,0 +1,30 @@
+#rightMenu a {
+	background: url('img/courses/banner_codigos.png');
+	color: transparent;
+	display: block;
+	height: 64px;
+	width: 100%;
+}
+
+#rightMenu div {
+	background: url('img/base.png') no-repeat;
+	height: 247px;
+	margin-top: 10px;
+}
+
+#rightMenu div h2 {
+	color: #4dc6f4;
+	font-size: 20pt;
+	font-weight: normal;
+	line-height: 1em;
+	margin: 0px 0px 0px 20px;
+	padding-top: 10px;
+}
+
+#rightMenu div p {
+	color: #696464;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	margin: 4px 10px 0px 45px;
+	text-align: justify;
+}

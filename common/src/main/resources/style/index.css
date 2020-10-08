@@ -1,0 +1,24 @@
+body {
+	overflow: hidden;
+}
+
+#container {
+	background: black;
+	overflow: hidden;
+	z-index: -1;
+}
+
+#footer, #header {
+	margin: 0 auto;
+	opacity: 0;
+}
+
+.page {
+	background : #FFF;
+	padding: 20px;
+	overflow: auto;
+}
+
+#universe {
+	background : url('img/fundo_degrade.png');
+}

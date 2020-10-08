@@ -1,0 +1,94 @@
+#data p {
+	color: #545454;
+	font-family: arial, sans-serif;
+	font-size: 10pt;
+	text-align: justify;
+}
+
+#leftMenu {
+	background: url('img/contact/lateral.png') no-repeat;
+	height: 219px;
+	left: 0;
+	margin-top: 0;
+	position: absolute;
+	top: 67px;
+	width: 202px;
+}
+
+#messageLabel {
+	border: none; 
+}
+
+
+.page .content input {
+	margin: 10px 10px 10px 0;
+	width: 185px;
+}
+
+.page .content input:hover, .page .content textarea:hover {
+	background: #fcfcfc;
+	border: 1px solid #e7e7e7;
+	padding: 4px;
+}
+
+.page .content input, .page .content label, .page .content textarea {
+	border: none;
+	border-bottom: 1px solid #ebebeb;
+	font-size: 12pt;
+	height: 20px;
+	padding: 5px;
+}
+
+.page .content label {
+	display: inline-block;
+	margin: 10px 0 10px 10px;
+	width: 50px;
+}
+
+.page .content p {
+	color: black;
+	font-size: 12pt;
+}
+
+.page .content p span {
+	color: #2aadef;
+	font-size: 25t;
+}
+
+.page .content textarea {
+	font-size: 12pt;
+	height: 150px;
+	width: 255px;
+}
+
+#rightMenu a {
+	background: url('img/contact/mapa.png') no-repeat;
+	border: 2px solid white;
+	height: 181px;
+	margin: 10px 20px;
+	width: 203px;
+}
+
+#rightMenu div {
+	background-image: url('img/localizacao_base_endereco.png');
+	background-position: 0px -140px;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding-top: 10px;
+}
+
+#rightMenu #map {
+	background: #ebf9fe;
+}
+
+#submitButton {
+	background: url('img/contact/enviar.png') no-repeat;
+	border: none;
+	color: transparent;
+	cursor: pointer;
+	height: 69px;
+	position: absolute;
+	right: 255px;
+	top: 328px;
+	width: 173px;
+}

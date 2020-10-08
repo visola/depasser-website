@@ -1,0 +1,30 @@
+.page .content {
+	border-bottom: 1px solid #ebebeb;
+	margin: 0 0 0 190px;
+	padding: 0;
+	width: 440px;
+}
+
+.page .content h2 {
+	border-bottom: 1px solid #ebebeb;
+	color: #4dc6f4;
+	font-size: 22pt;
+	font-weight: normal;
+	margin: 0 0 20px;
+	padding-bottom: 15px;
+}
+
+.page .content p , .page .content div {
+	color: #545454;
+	font-family: arial, sans-serif;
+	font-size: 10pt;
+	text-align: justify;
+}
+
+#rightMenu {
+	height: 300px;
+	position: absolute;
+	right: 10px;
+	top: 67px;
+	width: 240px;
+}
