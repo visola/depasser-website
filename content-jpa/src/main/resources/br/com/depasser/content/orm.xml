@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+	<entity class="br.com.depasser.content.Content">
+		<id-class class="br.com.depasser.content.ContentIdentification"></id-class>
+		<attributes>
+			<id name="language">
+			</id>
+			<id name="id">
+				<generated-value strategy="SEQUENCE"></generated-value>
+			</id>
+			
+			<basic name="title">
+			</basic>
+			<many-to-one name="template">
+				<cascade>
+					<cascade-merge />
+				</cascade>
+			</many-to-one>
+			<one-to-many name="fields" fetch="EAGER" mapped-by="content">
+				<cascade>
+					<cascade-all />
+				</cascade>
+			</one-to-many>
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.Template">
+		<attributes>
+			<id name="id">
+				<generated-value strategy="SEQUENCE"></generated-value>
+			</id>
+			<basic name="name">
+			</basic>
+			<one-to-many name="types" fetch="EAGER">
+				<cascade>
+					<cascade-all />
+				</cascade>
+			</one-to-many>
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.Type">
+		<attributes>
+			<id name="id">
+				<generated-value strategy="SEQUENCE"></generated-value>
+			</id>
+			<basic name="name">
+			</basic>
+			<basic name="required">
+			</basic>
+			<basic name="length">
+			</basic>
+			<basic name="value">
+			</basic>
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.Field">
+		<inheritance strategy="SINGLE_TABLE"></inheritance>
+		<attributes>
+			<id name="id">
+				<generated-value strategy="SEQUENCE"></generated-value>
+			</id>
+			<many-to-one name="type">
+				<cascade>
+					<cascade-merge />
+				</cascade>
+			</many-to-one>
+			<many-to-one name="content">
+				<cascade>
+					<cascade-merge />
+				</cascade>
+			</many-to-one>
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.field.TextField">
+		<inheritance strategy="JOINED"></inheritance>
+		<attributes>
+			<basic name="value" />
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.field.LongTextField">
+		<inheritance strategy="JOINED"></inheritance>
+		<attributes>
+			<basic name="value">
+				<lob />
+			</basic>
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.field.DateField">
+		<inheritance strategy="JOINED"></inheritance>
+		<attributes>
+			<basic name="value">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="format"></transient>
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.field.ParentField">
+		<inheritance strategy="JOINED"></inheritance>
+		<attributes>
+			<one-to-one name="value">
+				<cascade>
+					<cascade-merge />
+				</cascade>
+			</one-to-one>
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.Option">
+		<attributes>
+			<id name="id">
+				<generated-value strategy="SEQUENCE"></generated-value>
+			</id>
+			<basic name="name">
+			</basic>
+			<basic name="value">
+			</basic>
+			<many-to-one name="type">
+				<cascade>
+					<cascade-all />
+				</cascade>
+			</many-to-one>
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.OptionType">
+		<attributes>
+			<one-to-many name="options" mapped-by="type" fetch="EAGER" target-entity="br.com.depasser.content.Option">
+				<cascade>
+					<cascade-merge />
+				</cascade>
+			</one-to-many>
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.field.MultiValueField">
+		<attributes>
+			<one-to-many name="values" fetch="EAGER" target-entity="br.com.depasser.content.Option">
+				<cascade>
+					<cascade-merge />
+				</cascade>
+			</one-to-many>
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.DateType">
+		<inheritance strategy="JOINED"></inheritance>
+		<attributes>
+			<basic name="before">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="after">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.field.NumberField">
+		<inheritance strategy="JOINED"></inheritance>
+		<attributes>
+			<basic name="value" />
+		</attributes>
+	</entity>
+	<entity class="br.com.depasser.content.field.BooleanField">
+		<inheritance strategy="JOINED"></inheritance>
+		<attributes>
+			<basic name="value">
+			</basic>
+		</attributes>
+	</entity>
+
+</entity-mappings>

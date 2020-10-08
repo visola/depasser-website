@@ -1,0 +1,5 @@
+dependencies {
+  implementation project(':content')
+
+  implementation 'org.hibernate:hibernate-entitymanager:3.6.1.Final'
+}
