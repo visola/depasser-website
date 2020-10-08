@@ -1,0 +1,4 @@
+dependencies {
+  implementation 'javax.servlet:servlet-api:2.5'
+  implementation 'org.slf4j:slf4j-api:1.6.1'
+}
